@@ -105,6 +105,38 @@ section.b{padding:64px 0;border-bottom:1px solid var(--cizgi)}
 .fiyat .tutar small{font-size:.38em;font-stretch:100%;font-weight:600;margin-left:4px}
 .fiyat .vurgu{background:#fff8e6}
 
+/* fiyat: 3 paket (24 Eki 2026) · aylık/yıllık geçişi JS ile; JS yoksa aylık fiyat + yıllık bilgi satırı görünür */
+.donem-sec{display:inline-flex;flex-wrap:wrap;border:2px solid var(--murekkep);background:#fff;margin-bottom:22px;max-width:100%}
+.donem-sec[hidden]{display:none}
+.donem-sec button{font-family:var(--mono);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:11px 14px;min-height:44px;
+  border:0;background:transparent;color:var(--murekkep);cursor:pointer;border-radius:0}
+.donem-sec button + button{border-left:2px solid var(--murekkep)}
+.donem-sec button[aria-pressed="true"]{background:var(--murekkep);color:var(--kagit)}
+.donem-sec small{font-size:12px;font-weight:400;text-transform:none;letter-spacing:0}
+#fiyat:not([data-donem="yillik"]) .d-y,#fiyat[data-donem="yillik"] .d-a{display:none}
+.paketler{display:grid;grid-template-columns:1fr;border:2px solid var(--murekkep);background:#fff}
+.paket{position:relative;display:flex;flex-direction:column;padding:26px 20px 24px;min-width:0}
+.paket + .paket{border-top:2px solid var(--murekkep)}
+@media (min-width:960px){.paketler{grid-template-columns:repeat(3,1fr)}.paket + .paket{border-top:0;border-left:2px solid var(--murekkep)}}
+.paket.onerilen{background:#fff8e6;outline:4px solid var(--sari);outline-offset:-4px}
+.paket .rozet{position:absolute;top:0;right:16px;background:var(--sari);border:2px solid var(--murekkep);border-top:0;
+  font-family:var(--mono);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:4px 9px}
+.paket .etiket{margin-bottom:6px}
+.paket .kisa{color:var(--gri);margin:6px 0 0}
+.paket .tutar{font-stretch:68%;font-weight:800;font-size:clamp(46px,8vw,64px);line-height:1;margin:16px 0 8px}
+.paket .tutar small{font-size:.36em;font-stretch:100%;font-weight:600;margin-left:4px}
+.paket .alt{font-size:14.5px;color:var(--gri);min-height:2.9em;margin:0}
+.paket ul{list-style:none;margin:18px 0 22px;padding:0;font-size:15.5px;line-height:1.4}
+.paket li{position:relative;padding:8px 0 8px 24px;border-top:1px solid var(--cizgi)}
+.paket li::before{content:"✓";position:absolute;left:0;top:8px;font-weight:800}
+.paket li.ust-paket{font-weight:700}
+.paket li.yakinda{color:var(--gri)}
+.paket li.yakinda::before{content:"○";font-weight:400}
+.paket sup{font-size:.7em;line-height:0}
+.etiket-y{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--sari-koyu);background:var(--kagit);border:1px solid var(--sari);padding:1px 6px;margin-left:4px;white-space:nowrap;vertical-align:1px}
+.paket .btn{margin-top:auto;text-align:center}
+
 /* form */
 form{display:grid;gap:14px;max-width:640px}
 label{display:grid;gap:6px;font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
