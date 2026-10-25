@@ -1,0 +1,1 @@
+var e=`https://beyanno.com/app/`;export{e as t};
