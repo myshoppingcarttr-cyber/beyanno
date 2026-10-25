@@ -1,0 +1,149 @@
+[
+ {
+  "sayfa": 1,
+  "belge_turu": "varlik_islem_fisi",
+  "guven": 0.95,
+  "kase_var": false,
+  "imzalar": [
+   {
+    "alan": "teslim_eden",
+    "var": true
+   },
+   {
+    "alan": "duzenleyen",
+    "var": true
+   }
+  ],
+  "dayanak_no": "EA2026000000001",
+  "toplam": 11000,
+  "belge_no": "2026/9001"
+ },
+ {
+  "sayfa": 2,
+  "belge_turu": "recete",
+  "guven": 0.95,
+  "kase_var": true,
+  "imzalar": [
+   {
+    "alan": "doktor",
+    "var": true
+   }
+  ],
+  "elle_duzeltme": false,
+  "duzeltme_imzali": null,
+  "tarih": "2026-09-01"
+ },
+ {
+  "sayfa": 3,
+  "belge_turu": "fatura",
+  "guven": 0.95,
+  "kase_var": true,
+  "imzalar": [
+   {
+    "alan": "satici",
+    "var": true
+   }
+  ],
+  "belge_no": "EA2026000000001",
+  "toplam": 11000,
+  "tarih": "2026-09-01"
+ },
+ {
+  "sayfa": 4,
+  "belge_turu": "varlik_islem_fisi",
+  "guven": 0.95,
+  "kase_var": false,
+  "imzalar": [
+   {
+    "alan": "teslim_eden",
+    "var": true
+   },
+   {
+    "alan": "duzenleyen",
+    "var": false
+   }
+  ],
+  "dayanak_no": "EA2026000000002",
+  "toplam": 22000,
+  "belge_no": "2026/9002"
+ },
+ {
+  "sayfa": 5,
+  "belge_turu": "recete",
+  "guven": 0.95,
+  "kase_var": true,
+  "imzalar": [
+   {
+    "alan": "doktor",
+    "var": true
+   }
+  ],
+  "elle_duzeltme": true,
+  "duzeltme_imzali": false,
+  "tarih": "2026-09-02"
+ },
+ {
+  "sayfa": 6,
+  "belge_turu": "fatura",
+  "guven": 0.95,
+  "kase_var": false,
+  "imzalar": [
+   {
+    "alan": "satici",
+    "var": true
+   }
+  ],
+  "belge_no": "EA2026000000002",
+  "toplam": 22000,
+  "tarih": "2026-09-02"
+ },
+ {
+  "sayfa": 7,
+  "belge_turu": "varlik_islem_fisi",
+  "guven": 0.95,
+  "kase_var": false,
+  "imzalar": [
+   {
+    "alan": "teslim_eden",
+    "var": true
+   },
+   {
+    "alan": "duzenleyen",
+    "var": true
+   }
+  ],
+  "dayanak_no": "EA2026000000099",
+  "toplam": 33000,
+  "belge_no": "2026/9003"
+ },
+ {
+  "sayfa": 8,
+  "belge_turu": "recete",
+  "guven": 0.95,
+  "kase_var": false,
+  "imzalar": [
+   {
+    "alan": "doktor",
+    "var": false
+   }
+  ],
+  "elle_duzeltme": false,
+  "duzeltme_imzali": null,
+  "tarih": "2026-09-03"
+ },
+ {
+  "sayfa": 9,
+  "belge_turu": "fatura",
+  "guven": 0.95,
+  "kase_var": true,
+  "imzalar": [
+   {
+    "alan": "satici",
+    "var": false
+   }
+  ],
+  "belge_no": "EA2026000000003",
+  "toplam": 33000,
+  "tarih": "2026-09-03"
+ }
+]

@@ -1,0 +1,20 @@
+# Statik barındırma (Cloudflare Pages / Netlify) güvenlik başlıkları — web sürümü (mali.dijitabela.com).
+# CSP önce "Report-Only": canlıda konsol temiz görülünce Content-Security-Policy'ye çevrilir.
+# PayTR: iFrame (frame-src), iframeResizer.min.js (script-src) ve Direkt API tam sayfa form (form-action) için www.paytr.com izinli (21 Eki).
+# Alan adı beyanno.com.tr'ye geçince yukarıdaki "mali.dijitabela.com" notu da güncellenir. /abonelik (PayTR dönüşü) index.html'e düşmeli (SPA geri dönüşü).
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(self), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://www.paytr.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.supabase.co; connect-src 'self' https://*.supabase.co wss://*.supabase.co; frame-src https://www.paytr.com; worker-src 'self' blob:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://www.paytr.com
+
+/sw.js
+  Cache-Control: no-cache
+
+/index.html
+  Cache-Control: no-cache
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

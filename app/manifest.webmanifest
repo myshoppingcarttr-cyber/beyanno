@@ -1,0 +1,17 @@
+{
+  "name": "Beyanno",
+  "short_name": "Beyanno",
+  "description": "Mali müşavirler için belge, beyan ve mükellef takibi — kurulum gerektirmeyen web sürümü",
+  "lang": "tr",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#16181D",
+  "theme_color": "#16181D",
+  "icons": [
+    { "src": "simge-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "simge-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "simge.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
