@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
+<title>Ödeme sonucu · Beyanno</title>
+<style>
+:root{--zemin:#fff;--yazi:#16181d;--soluk:#5b626d;--vurgu:#1c5fb0}
+@media (prefers-color-scheme:dark){:root{--zemin:#16181d;--yazi:#e6e9ef;--soluk:#a3abb9;--vurgu:#8fb0ff}}
+body{margin:0;padding:32px 16px;background:var(--zemin);color:var(--yazi);font:16px/1.6 system-ui,"Segoe UI",Arial,sans-serif;text-align:center}
+h1{font-size:20px;margin:0 0 8px}p{margin:0 0 12px;color:var(--soluk)}a{color:var(--vurgu)}
+</style></head><body>
+<h1 id="baslik">Ödeme işleminiz alındı</h1>
+<p id="metin">Kesin sonuç birkaç saniye içinde Paket ve Ödeme ekranında görünür. Bu sayfa sonucu göstermez.</p>
+<p><a id="git" href="/app/#/paket-odeme" target="_top">Paket ve Ödeme ekranına dön</a></p>
+<script>
+// PayTR dönüş adresi (SITE_URL/abonelik). Yalnız bilgi verir; aboneliği PayTR bildirimi açar.
+if (new URLSearchParams(location.search).get("odeme") === "hata") {
+  document.getElementById("baslik").textContent = "Ödeme tamamlanamadı";
+  document.getElementById("metin").textContent = "Aboneliğiniz başlatılmadı. Paket ve Ödeme ekranından yeniden deneyebilir ya da havale/EFT seçebilirsiniz.";
+}
+</script>
+</body></html>
